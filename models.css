@@ -205,7 +205,7 @@ html {
   
 /* Set background image for the body */
 body {
-  background-image: url(./IMAGES/showroombg.png); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background-image: url(./showroombg.png); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
   background-size: cover; /* This property ensures the image covers the entire background */
   background-position: center; /* This property centers the background image */
   background-repeat: no-repeat; /* This property prevents the background image from repeating */
