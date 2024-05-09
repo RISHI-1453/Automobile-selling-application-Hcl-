@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,800&family=Inconsolata:wght@300&family=Kanit:wght@500&family=Roboto:wght@400;500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:"poppins";
+}
+
+:root {
+  --main-color: #fb3640;
+  --background-color: rgba(20, 75, 81, 0.348);
+  --white-color: #fff;
+  --gradient-color:linear-gradient(to left,rgba(227,58,25,1), rgba(225,111,154,1));
+}
+
+html {
+  font-size: 62.5%;
+ 
+}
+@media only screen and (max-width: 600px) {
+
+}
+
+
+.header {
+  padding: 0 10rem;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--background-color);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: var(--white-color);
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+
+.header .navbar-brand {
+  font-size: 4rem;
+  color: var(--main-color);
+  cursor: pointer;
+  letter-spacing: 0.1em;
+}
+.header .navbar-brand:hover{
+  filter: drop-shadow(10px 10px 20px rgb(0, 255, 4));
+
+}
+.navbar-list {
+  display: flex;
+  gap: 4.0rem;
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--text-color);
+  transition: all 0.4s ease;
+  letter-spacing: 0.1rem;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+  color: rgb(255, 0, 13);
+  transform: scale(1.3);
+  
+}
+.mobile-navbar-btn {
+    display: none;
+  }
+  @media only screen and (max-width: 1200px) {
+    .header {
+      padding: 0 5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .navbar-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar-list li {
+      margin-bottom: 1rem;
+    }
+  
+    .main {
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+    }
+  
+    .main .men {
+      width: 80%;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .header {
+      padding: 0 2rem;
+    }
+  
+    .navbar-list {
+      gap: 2rem;
+    }
+  
+    .main .main-detil h1 {
+      font-size: 40px;
+    }
+  
+    .main .main-detil h2 {
+      font-size: 18px;
+    }
+  
+    .main .main-detil h4 {
+      font-size: 24px;
+    }
+  
+    .main .btn button {
+      font-size: 16px;
+    }
+  
+    .social-icons img {
+      width: 30px;
+    }
+  }
+  
+  
+  .header {
+    padding: 0 5rem;
+    height: auto;
+  }
+  
+  .navbar-list {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 2rem; 
+    margin-top: 2rem;
+  }
+  
+  .navbar-list li {
+    margin-bottom: 1rem; 
+  }
+  
+  .navbar-link {
+    padding: 0.5rem 1rem; 
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+    .header {
+      padding: 0 2rem;
+    }
+  
+    .navbar-list {
+      justify-content: center; 
+    }
+  
+    .navbar-link {
+      font-size: 1.8rem;
+    }
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none; 
+  }
+
+
+
+
+
+
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0px;
+    background-image: url('./IMAGES/showrrom\ bg.jpeg');
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 
+    -1px -1px 0 #fff,  
+     1px -1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px  1px 0 #fff;
+}
+
+.car-categories {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.category {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #dddddd2c;
+    margin-bottom: 20px;
+    background-color: #44424294;
+}
+
+.category h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-shadow: 
+    -1px -1px 0 #fff,  
+     1px -1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px  1px 0 #fff;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.car-item {
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+.car-item:hover {
+    
+    opacity: 1.5;
+}
+
+.car-item img {
+    width: 20px;
+    height: 150px;
+    object-fit: cover;
+
+}
+
+.car-item a {
+    display: block;
+    text-decoration: none;
+    color: rgb(159, 39, 39);
+}
+img{
+  opacity: 0.8;
+  size: 50%;
+  width: 300px;
+  height: 250px;
+}
+
+img:hover{
+  opacity: 2;
+  transform: scale(1.2);
+}
+
+p{
+  font-size: 22px;
+  margin-left: 27%;
+  font-weight: bold;
+  text-shadow: 
+    -1px -1px 0 #fff,  
+     1px -1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px  1px 0 #fff;
+}
+
+
+
+
+/* Overall form styling */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 750px; /* Adjust width as needed */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  text-shadow: 
+    -1px -1px 0 #fff,  
+     1px -1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px  1px 0 #fff;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box; /* Include padding in width */
+  margin-bottom: 15px;
+}
+
+/* Select menu */
+select {
+  cursor: pointer;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  margin: auto;
+  margin:auto;
+  
+}
+
+/* Submit button (optional styling) */
+button[type="submit"] {
+  background-color: #4CAF50; /* Green */
+
+}
+
+/* Google Pay button (optional styling) */
+#gpay-button {
+  background-color: #00ACC1; /* Google Pay blue */
+  color: #fff;
+ 
+}
+
+/* Error message (optional styling) */
+.error {
+  color: red;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
